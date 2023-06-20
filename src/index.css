@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    font-size: 22px;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+.App{
+    height: calc(100vh - 2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid mediumblue;
+}
+header{
+    background-color: mediumblue;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 1rem 0.25rem;
+    flex-shrink: 0;
+}
+main{
+    height: calc(100% - 2px);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    flex-grow: 1;
+    overflow: auto;
+}
+footer{
+    background-color: mediumblue;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.25rem;
+    flex-shrink: 0;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.item{
+    display: flex;
+    border: 2px solid black;
+    padding: 2px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0.5vw;
+    height: calc(6vh- 4px);
+}
+.item p{
+    text-transform: capitalize;
+}
+.item-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: mediumblue;
+    color: #fff;
+    border-radius: 2px;
+    padding: 3px;
+}
+button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+input[type='checkbox']{
+    height: 6vh;
+    width:6vh
+}
+.add{
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    height: 7vh;
+}
+.add input{
+    width: 60%;
+    padding: 3px;
+    border: 2px solid mediumblue;
+    margin-right: 2vw;
+    height: 5vh;
+}
+.add button:hover{
+    background-color: green;
+}
+.empty{
+    display: flex;
+    justify-content: center;
+    color: red;
+    align-items: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+.search input{
+    width: 73%;
+    height: 5vh;
+    border: 2px solid mediumblue;
+    padding: 2px;
+}
